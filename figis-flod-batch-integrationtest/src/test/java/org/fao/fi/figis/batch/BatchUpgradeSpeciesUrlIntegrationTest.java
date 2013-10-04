@@ -17,8 +17,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(CdiRunner.class)
+@ActivatedAlternatives(FigisDataBaseProducer.class)
 @AdditionalClasses(FlodClientGet.class)
-@ActivatedAlternatives({ FigisDataBaseProducer.class })
 public class BatchUpgradeSpeciesUrlIntegrationTest {
 
 	@Inject
