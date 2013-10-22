@@ -5,7 +5,13 @@
 	<artifactId>figis-flod-batch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
+	<properties>
+		<version>0.0.1-SNAPSHOT</version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<slf4j.version>1.7.5</slf4j.version>
+		<weld.version>2.0.4.Final</weld.version>
+	</properties>
 
 
 
@@ -31,7 +37,7 @@
 		<dependency>
 			<groupId>org.jboss.weld</groupId>
 			<artifactId>weld-core</artifactId>
-			<version>1.1.10.Final</version>
+			<version>${weld.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jglue.cdi-unit</groupId>

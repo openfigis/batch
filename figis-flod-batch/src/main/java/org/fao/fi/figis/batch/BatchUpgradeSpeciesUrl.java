@@ -30,6 +30,7 @@ public class BatchUpgradeSpeciesUrl {
 			FicItem ficItem = (FicItem) object;
 			FetchURIresponse uri = flodService.fetchURI(CODELIST, ficItem.getAlpha3code());
 			ficItem.setSemanticId(uri.getURI().toString());
+			figisDao.merge(ficItem);
 		}
 	}
 }
